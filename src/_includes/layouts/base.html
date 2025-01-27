@@ -31,14 +31,12 @@
         <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}"/>
-        {% endif %}
+        {# {% if preloadImg != '' %} #}
+            {# <link rel="preload" as="image" href="{{ preloadImg }}"/> #}
+        {# {% endif %} #}
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
-        <link rel="stylesheet" href="/assets/css/dark.css">
-        <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
         {% block head %}{% endblock %}
