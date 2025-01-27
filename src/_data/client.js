@@ -1,20 +1,20 @@
 module.exports = {
-    "name": "New Growth Web Services",
-    "email": "newgrowthweb@gmail.com",
-    "phoneForTel": "613-857-9828",
-    "phoneFormatted": "(613) 857-9828",
+    "name": "Aurum Health",
+    "email": "pdarlingtonrmt@gmail.com", //TODO: update to new email
+    "phoneForTel": "613-253-3456",
+    "phoneFormatted": "(613) 253-3456",
     "address": {
-        "lineOne": "123 Fake Street",
-        "city": "Ottawa",
+        "lineOne": "19 Victoria St.",
+        "city": "Carelton Place",
         "state": "ON",
-        "postalCode": "K0A1X0",
+        "postalCode": "K7C 2W2",
         "country": "Canada",
-        "mapLink": "https://maps.app.goo.gl/5y6iGEJqFwFWFt9i9"
+        "mapLink": "https://maps.app.goo.gl/nH4gkHKw5TfPTDBx9"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/p/Darlington-Acupuncture-and-Massage-Therapy-100041894211134/",
+        "instagram": "https://www.instagram.com/therapy5656/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://www.aurumhealth.ca"
 };
