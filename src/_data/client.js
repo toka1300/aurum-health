@@ -6,7 +6,7 @@ module.exports = {
     "address": {
         "lineOne": "19 Victoria St.",
         "city": "Carelton Place",
-        "state": "ON",
+        "province": "ON",
         "postalCode": "K7C 2W2",
         "country": "Canada",
         "mapLink": "https://maps.app.goo.gl/nH4gkHKw5TfPTDBx9" //TODO
