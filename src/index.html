@@ -1,6 +1,6 @@
 ---
 title: 'Aurum Health | Home'
-description: 'Meta description for the page'
+description: 'TODO'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -84,49 +84,180 @@ media="print" onload="this.media='all'; this.onload=null;">
 <section id="hero-671">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">One to One Coaching With Plant Medicine</span>
-            <h2 class="cs-title">Aurum Health</h2>
-            <div id="button-box-1483">
-                <a class="cs-link" href="mailto:{{client.email}}">
-                    <picture class="cs-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/mail.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-phone">{{client.email}}</span>
-                    </div>
-                </a>
-                <a class="cs-link" href="tel:{{ client.phoneFormatted }}">
-                    <picture class="cs-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/phone.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-phone">{{ client.phoneFormatted }}</span>
-                    </div>
-                </a>
-                <a class="cs-link" href="https://www.darlingtonacupunctureandmassage.com/" target="_blank">
-                    <picture class="cs-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/world.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-phone">Click Here for Former Website</span>
-                    </div>
-                </a>
-                <p class="cs-text">New website coming in early March!</p>
-            </div>                
+            <span class="cs-topper">Invest In Your Health Equity</span>
+            <h2 class="cs-title">Wellness Coaching & Massage Therapy</h2>
+            <p class="cs-text">
+                Unlock your body's natural healing potential with personalized, holistic care backed by 25 years of expertise. Experience the perfect blend of traditional wisdom and modern therapeutic techniques for lasting wellness.
+            </p>
+            <a href="" class="cs-button-solid">Book Appointment</a>
         </div>
         <picture class="cs-background">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1200, height: 1000, position: right }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1200, height: 1000, position: right }) | webp %}" type="image/webp">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1200, height: 1000, position: right }) | jpeg %}" type="image/jpeg">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1400, height: 1600, position: right }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1400, height: 1600, position: right }) | webp %}" type="image/webp">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1400, height: 1600, position: right }) | jpeg %}" type="image/jpeg">
-           <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1400, height: 1600 }) | jpeg %}" alt="Plant medicine" width="1400" height="1600" loading="eager" decoding="async" aria-hidden="true">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 1978, height: 2000 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 1978, height: 2000 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 1978, height: 2000 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2000, height: 1000 }) | jpeg %}" alt="Herbal medicine" width="1200" height="1000" loading="eager" decoding="async" aria-hidden="true">
         </picture>
     </div>
 </section>
 
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1131">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Natural Healing Services</span>
+            <h2 class="cs-title">Discover Your Path To Wellness</h2>
+            <p class="cs-text">
+                Explore each of our services listed below. Each service is tailored to your unique needs, supporting your journey to optimal health and vitality.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/salad.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="./assets/svgs/blob-services.svg" alt="graphic" width="100" height="103">
+                </div>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Health Coaching</h3>
+                    <p class="cs-item-text">
+                        Our holistic health coaching combines an up-to-date iridology assessment, personalized nutrition analysis, functional lab testing and thermography to design bio-individualized health programs
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/massage.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="./assets/svgs/blob-services.svg" alt="graphic" width="100" height="103">
+                </div>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Massage Therapy</h3>
+                    <p class="cs-item-text">
+                        Our massage therapy goes beyond relaxation to address pain, improve mobility, and enhance your body's natural healing processes
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/healthy.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="./assets/svgs/blob-services.svg" alt="graphic" width="100" height="103">
+                </div>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Scar Tissue Treatment</h3>
+                    <p class="cs-item-text">
+                        Using specialized techniques and natural approaches, we help reduce scar tissue formation and manage chronic pain, restoring your body's optimal function and movement.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/hand-heart.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="./assets/svgs/blob-services.svg" alt="graphic" width="100" height="103">
+                </div>
+                <div class="csflex">
+                    <h3 class="cs-h3">Vagal Nerve Regulation</h3>
+                    <p class="cs-item-text">
+                        Through gentle micro-current, Health Canada approved techniques we help regulate your vagal nerve function, improving your body's stress response, immunity, respiration, digestion and circulation.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Stats                     -->
+<!-- ============================================ -->
+
+<section id="stats-888">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Mission</span>
+            <h2 class="cs-title">Our Health & Wellness Statistics</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <p class="cs-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos eum amet atque deserunt ut quibusdam quam qui quidem quae.
+            </p>
+            <a href="" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-desc">Investigative and Integrative Methods</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-desc">Education and Experience</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-desc">Collaborative and Compassionate Care</span>
+            </li>
+            <div class="cs-stem"></div>
+            <div class="cs-stem"></div>
+            <div class="cs-stem"></div>
+        </div>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1141">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Team</span>
+                <h2 class="cs-title">Meet Our Wellness Experts</h2>
+            </div>
+            <a href="/meet-the-team" class="cs-button-solid">Learn More About The Team</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 656, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 656, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 656, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Photo of Patricia" width="656" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Patricia Saliba</span>
+                    <span class="cs-job">CH,CI ,RMT Owner and Health Coach</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 656, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 656, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 656, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Photo of Patricia" width="656" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Jenni Kerteston</span>
+                    <span class="cs-job">RMT</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                                 
+                                
     {% include 'components/cta.html' %}
 {% endblock %}

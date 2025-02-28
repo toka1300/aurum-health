@@ -15,7 +15,7 @@
             flex-direction: column;
             align-items: center;
             /* 48px - 64px */
-            // gap: clamp(3rem, 6vw, 4rem);
+            gap: clamp(3rem, 6vw, 4rem);
         }
 
         .cs-content {
@@ -25,7 +25,7 @@
             max-width: calc(522 / 16 * 1rem);
             /* added section padding to cs-content so cs-background can be full width, removed at desktop */
             /* 120px - 300px top */
-            padding: clamp(2.5rem, 20.82vw, 18.75rem) 1rem 0;
+            padding: clamp(7.5rem, 20.82vw, 18.75rem) 1rem 0;
             padding-bottom: 0;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
@@ -75,6 +75,12 @@
             /* 32px - 40px */
             margin: 0 0 clamp(2rem, 5vw, 2.5rem) 0;
             color: var(--bodyTextColor);
+        }
+
+        .cs-button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
 
         .cs-button-solid {
@@ -146,6 +152,12 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .cs-button-group {
+        flex-direction: row;
+    }
+}
+
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #hero-671 {
@@ -184,118 +196,4 @@
     }
 }
 
-/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
-
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-    #button-box-1483 {
-        width: 100%;
-        max-width: calc(630 / 16 * 1rem);
-        margin-bottom: calc(32 / 16 * 1rem);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: calc(24 / 16 * 1rem);
-    
-        .cs-link {
-            text-decoration: none;
-            padding-right: calc(40 / 16 * 1rem);
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: calc(16 / 16 * 1rem);
-            position: relative;
-    
-            &:hover {
-                .cs-wrapper {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    
-        .cs-wrapper {
-            width: calc(52 / 16 * 1rem);
-            height: calc(52 / 16 * 1rem);
-            border: 1px solid #E8E8E8;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* prevents flexbox from squishing it */
-            flex: none;
-            transition: transform .3s;
-        }
-    
-        .cs-img {
-            width: calc(52 / 16 * 1rem);
-            height: auto;
-            border: 2px solid #BABABA;
-            border-radius: 50%;
-            /* prevents border from affecting height and width */
-            box-sizing: border-box;
-        }
-    
-        .cs-icon {
-            width: calc(24 / 16 * 1rem);
-            height: auto;
-            display: block;
-        }
-    
-        .cs-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: calc(4 / 16 * 1rem);
-        }
-    
-        .cs-header {
-            font-size: calc(25 / 16 * 1rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            margin: 0;
-            color: var(--headerColor);
-            display: block;
-        }
-    
-        .cs-phone {
-            font-size: calc(20 / 16 * 1rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            margin: 0;
-            color: var(--headerColor);
-            display: block;
-            text-align: left;
-        }
-    
-        .cs-job {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            margin: 0;
-            color: var(--secondary);
-            display: block;
-        }
-    
-        .cs-link-content {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.2em;
-            font-weight: 400;
-            margin: 0;
-            color: var(--bodyTextColor);
-            display: block;
-        }
-    }
-  }
-  
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48rem) {
-    #button-box-1483 {
-        .cs-link {
-            &:nth-of-type(1) {
-                border-right: 1px solid #E8E8E8;
-            }
-        }
-    }
-  }
                                 

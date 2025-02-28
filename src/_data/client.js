@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Aurum Health",
-    "email": "pdarlingtonrmt@gmail.com", //TODO: update to new email
+    "email": "patricia@aurumhealth.ca",
     "phoneForTel": "613-253-3456",
     "phoneFormatted": "(613) 253-3456",
     "address": {
@@ -9,7 +9,7 @@ module.exports = {
         "state": "ON",
         "postalCode": "K7C 2W2",
         "country": "Canada",
-        "mapLink": "https://maps.app.goo.gl/nH4gkHKw5TfPTDBx9"
+        "mapLink": "https://maps.app.goo.gl/nH4gkHKw5TfPTDBx9" //TODO
     },
     "socials": {
         "facebook": "https://www.facebook.com/p/Darlington-Acupuncture-and-Massage-Therapy-100041894211134/",
