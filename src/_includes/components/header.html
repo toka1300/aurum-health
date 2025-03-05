@@ -16,7 +16,7 @@
             <div class="cs-top-contact">
                 <a href="" class="cs-top-link">
                     <img class="cs-link-icon" src="../../assets/svgs/map-pin.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
-                    {{client.address.lineOne}}, {{client.address.city}}
+                    {{client.address.lineOne}}, <span class="header-city">{{ client.address.city}}</span>
                 </a>
                 <a href="" class="cs-top-link">
                     <img class="cs-link-icon" src="../../assets/svgs/phone.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
@@ -26,7 +26,6 @@
         </div>
     </div>
     <div class="cs-container">
-        <!--Nav Logo-->
         <a href="/home" class="cs-logo" aria-label="back to home">
             <img src="../../assets/svgs/logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
         </a>
