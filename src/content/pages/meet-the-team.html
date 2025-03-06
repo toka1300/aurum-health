@@ -10,7 +10,7 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/meet-the-team.css">
+    <link rel="stylesheet" href="/assets/css/side-by-side.css">
 {% endblock %}
 
 {% block body %}
@@ -37,7 +37,6 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
-            <!--Spidey Sense Graphic-->
         </div>
         <div class="cs-content">
             <span class="cs-topper">Meet Patricia</span>
@@ -104,6 +103,6 @@ eleventyNavigation:
         </div>
     </div>
     <!--Floating Leaf-->
-    <img class="cs-floater" loading="lazy" decoding="async" src="../../assets/images/flower-graphic.png" alt="leaf" width="216" height="384" aria-hidden="true">
+    <img class="cs-floater" loading="lazy" decoding="async" src="../../assets/images/leaf-graphic.png" alt="leaf" width="216" height="384" aria-hidden="true">
 </section>                
 {% endblock %}

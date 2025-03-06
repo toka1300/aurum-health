@@ -10,7 +10,9 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/meet-the-team.css">
+    <link rel="stylesheet" href="/assets/css/massage-therapy.css">
+    <link rel="stylesheet" href="/assets/css/side-by-side.css">
+    <script defer src="/assets/js/faq.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -21,45 +23,115 @@ eleventyNavigation:
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="RPsbs-693">
+<section id="RPsbs-693" class="grey-background">
     <div class="cs-container">
         <div class="cs-image-group">
             <!--Main Image-->
             <picture class="cs-picture cs-picture1">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fgym.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fgym.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fgym.jpg" alt="gym" width="542" height="647">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 526, height: 628 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 1084, height: 1294 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/massage-1.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
-            <!--Small Image-->
-            <picture class="cs-picture cs-picture2">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fweight1.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fweight1.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fweight1.jpg" alt="weight measure" width="413" height="493">
-            </picture>
-            <!--Flower Graphic-->
-            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fbig-abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
-            <!--Spidey Sense Graphic-->
-            <img class="cs-sense" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fspider-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
+            <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Available <span class="cs-color">Weight Loss</span> Options</h2>
+            <span class="cs-topper">The Healing power of touch</span>
+            <h2 class="cs-title">Massage Therapy in Carelton Place</h2>
             <p class="cs-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Massage therapy is the manipulation of soft tissues of the body including muscles, connective tissue, tendons, ligaments and joints. Massage therapy is a clinically-oriented healthcare option that helps alleviate the discomfort associated with every day occupational stresses, muscular over-use and many chronic pain conditions.
             </p>
             <p class="cs-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos eum amet atque deserunt ut quibusdam quam qui quidem quae.
+                Massage therapy should only be provided by a Registered Massage Therapist (RMT). An RMT is a primary healthcare provider in Ontario and anyone may visit an RMT of their choice. Massage therapy can be used as a treatment for both acute and chronic conditions. RMTs work with a wide variety of patients in the treatment of illness, injury rehabilitation and disability.
+            </p>
+            <p class="cs-text">
+                The services of an RMT are not covered under the Ontario Health Insurance Plan (OHIP); however, many extended health benefit plans will cover all or part of the services provided by an RMT. A referral or prescription is not required to visit an RMT, although some insurance companies may require this. Massage therapy treatments may also be reimbursed by automobile insurance companies, if the client was in a motor vehicle accident, or in the case of workplace injuries, by the Workplace Safety and Insurance Board (WSIB).
+            </p>
+            <p class="cs-text">
+                For more info on Massage Therapy and Registered Massage Therapist please visit the <a href="https://www.rmtao.com/" target="_blank">website of the Registered Massage Therapists of Ontario</a>.
             </p>
             <a href="" class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
-    <!--Floating Leaf-->
-    <img class="cs-floater" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fleaf4.png" alt="leaf" width="216" height="384" aria-hidden="true">
 </section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-676">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Discover the restorative benefits</span>
+            <h2 class="cs-title">Benefits of Massage</h2>
+            <p class="cs-text">
+                Our therapeutic massage techniques provides relief, restores function and rehabilitates - massage has been shown to help with the following.
+            </p>
+        </div>
+        <div class="sbs-card-text">
+            <div class="cs-content-side">
+                <p class="cs-list-desc">Massage is also frequently recommended to improve the rate of recovery from injuries</p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <span>Minor Sports Injuries</span>
+                    </li>
+                    <li class="cs-li">
+                        <span>Recurring Stress or Repetitive Strain Injuries</span>
+                    </li>
+                    <li class="cs-li">
+                        <span>Whiplash and Whiplash Associated Disorders</span>
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid">Book Appointment</a>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="../../assets/svgs/massage-back.svg" alt="icon" aria-hidden="true" decoding="async" width="52" height="52">
+                    </picture>
+                    <h2 class="cs-h2">Muscle Recovery</h2>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="../../assets/svgs/circulation.svg" alt="icon" aria-hidden="true" decoding="async" width="52" height="52">
+                    </picture>
+                    <h2 class="cs-h2">Circulation</h2>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="../../assets/svgs/fatigue.svg" alt="icon" aria-hidden="true" decoding="async" width="52" height="52">
+                    </picture>
+                    <h2 class="cs-h2">Chronic Muscle Fatigue</h2>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="../../assets/svgs/muscle-pain.svg" alt="icon" aria-hidden="true" decoding="async" width="52" height="52">
+                    </picture>
+                    <h2 class="cs-h2">Muscle Pain</h2>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="../../assets/svgs/pain-in-joints.svg" alt="icon" aria-hidden="true" decoding="async" width="52" height="52">
+                    </picture>
+                    <h2 class="cs-h2">Joint Pain</h2>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="../../assets/svgs/joint-pain.svg" alt="icon" aria-hidden="true" decoding="async" width="52" height="52">
+                    </picture>
+                    <h2 class="cs-h2">Limited Joint Mobility</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img class="cs-floater" loading="lazy" decoding="async" src="../../assets/images/leaf-graphic.png" alt="leaf" width="216" height="384" aria-hidden="true">    
+</section>
+
 
 <!-- ============================================ -->
 <!--           Side By Side Reverse               -->
@@ -70,40 +142,192 @@ eleventyNavigation:
         <div class="cs-image-group">
             <!--Main Image-->
             <picture class="cs-picture cs-picture1">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fgym.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fgym.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fgym.jpg" alt="gym" width="542" height="647">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 526, height: 628, position: "right" }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 526, height: 628, position: "right" }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 526, height: 628, position: "right" }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 1300, height: 1294, position: "right" }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 1300, height: 1294, position: "right" }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 1300, height: 1294, position: "right" }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/massage-assessment.jpg" | resize({ width: 1300, height: 1294, position: "right" }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
-            <!--Small Image-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Treatment List</span>
+            <h2 class="cs-title">List of Conditions We Treat in Our Center</h2>
+            <p class="cs-text">
+                Massage therapy can treat both acute and chronic conditions. RMTs work with a wide variety of patients in the treatment of illness, injury, rehabilitation and disability.
+            </p>
+            <p class="cs-text">
+                Massage therapy can prove beneficial to many conditions, including but not limited to the following:</p>
+            <div class="cs-list-group">
+                <ul class="cs-ul">
+                    <li class="cs-li"><span class="bullet-transform">Anxiety and Depression</span></li>
+                    <li class="cs-li">Arthritis</li>
+                    <li class="cs-li">Asthma and Emphysema</li>
+                    <li class="cs-li">Cancer</li>
+                    <li class="cs-li">Carpal Tunnel Syndrome</li>
+                    <li class="cs-li">Chronic Fatigue Syndrome</li>
+                    <li class="cs-li">Dislocations</li>
+                    <li class="cs-li">Edema</li>
+                    <li class="cs-li">Fibromyalgia</li>
+                    <li class="cs-li">Headaches</li>
+                    <li class="cs-li">Inflammatory Conditions</li>
+                    <li class="cs-li">Insomnia</li>
+                    <li class="cs-li">Lymphoedema</li>
+                    <li class="cs-li">Multiple Sclerosis</li>
+                </ul>
+                <ul class="cs-ul">
+                    <li class="cs-li">Muscle Tension and Spasm</li>
+                    <li class="cs-li">Parkinson's Disease</li>
+                    <li class="cs-li">Plantar Fasciitis</li>
+                    <li class="cs-li">Post-Surgical Rehabilitation</li>
+                    <li class="cs-li">Post-Traumatic Stress Disorder (PTSD)</li>
+                    <li class="cs-li">Pregnancy and Labor Support</li>
+                    <li class="cs-li">Sciatica</li>
+                    <li class="cs-li">Scoliosis</li>
+                    <li class="cs-li">Sports Injuries</li>
+                    <li class="cs-li">Strains and Sprains</li>
+                    <li class="cs-li">Stress and Stress-Related Conditions</li>
+                    <li class="cs-li">Stroke</li>
+                    <li class="cs-li">Tendinitis</li>
+                    <li class="cs-li">Whiplash</li>
+                </ul>
+            </div>
+            <a href="" class="cs-button-solid">Book Appointment</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RPsbs-693" class="cs-wide">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <picture class="cs-picture cs-picture1">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
             <picture class="cs-picture cs-picture2">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fweight1.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fweight1.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fweight1.jpg" alt="weight measure" width="413" height="493">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/senior.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
-            <!--Flower Graphic-->
-            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fbig-abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
-            <!--Spidey Sense Graphic-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
             <img class="cs-sense" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fspider-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Available <span class="cs-color">Weight Loss</span> Options</h2>
+            <span class="cs-topper">Research Backed Benefits</span>
+            <h2 class="cs-title">Therapeutic Massage Throughout Life's Journey</h2>
             <p class="cs-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Research from leading institutions demonstrates that massage therapy provides significant benefits across all life stages, from promoting growth in premature infants to reducing anxiety in elderly care. From enhancing athletic performance and supporting pregnancy wellness to boosting workplace productivity and strengthening immunity, therapeutic massage offers evidence-based solutions for diverse health needs.
             </p>
             <p class="cs-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos eum amet atque deserunt ut quibusdam quam qui quidem quae.
+                Massage therapy should only be provided by a Registered Massage Therapist (RMT). An RMT is a primary healthcare provider in Ontario and anyone may visit an RMT of their choice. Massage therapy can be used as a treatment for both acute and chronic conditions. RMTs work with a wide variety of patients in the treatment of illness, injury rehabilitation and disability.
+            </p>
+            <p class="cs-text">
+                The services of an RMT are not covered under the Ontario Health Insurance Plan (OHIP); however, many extended health benefit plans will cover all or part of the services provided by an RMT. A referral or prescription is not required to visit an RMT, although some insurance companies may require this. Massage therapy treatments may also be reimbursed by automobile insurance companies, if the client was in a motor vehicle accident, or in the case of workplace injuries, by the Workplace Safety and Insurance Board (WSIB).
+            </p>
+            <p class="cs-text">
+                For more info on Massage Therapy and Registered Massage Therapist please visit the <a href="https://www.rmtao.com/" target="_blank">website of the Registered Massage Therapists of Ontario</a>.
             </p>
             <a href="" class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
-    <!--Floating Leaf-->
-    <img class="cs-floater" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fleaf4.png" alt="leaf" width="216" height="384" aria-hidden="true">
+                                
+<section id="faq-1346">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Research Backed Benefits</span>
+            <h2 class="cs-title">Therapeutic Massage Throughout Life's Journey</h2>
+            <p class="cs-text">
+                Research from leading institutions demonstrates that massage therapy provides significant benefits across all life stages, from promoting growth in premature infants to reducing anxiety in elderly care. From enhancing athletic performance and supporting pregnancy wellness to boosting workplace productivity and strengthening immunity, therapeutic massage offers evidence-based solutions for diverse health needs.
+            </p>
+        </div>
+            <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+            <div class="cs-wrapper">
+                <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+                <ul class="cs-faq-group">
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Throughout The Lifespan
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            The Touch Research Institute, University of Miami, has completed many research studies on massage therapy. These researchers have found evidence that massage has significant benefit for babies, children, adults, and elderly persons.
+                        </p>
+                        <p class="cs-item-p">
+                            Massage therapy has been shown to enhance growth in premature babies in the hospital, calm aggressive adolescents and help kids with Attention Deficit Disorder. Elderly persons in nursing homes have responded to massage with decreased agitated behaviour.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the tax implications of investing in the stock market?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my credit score?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the difference between a traditional IRA and a Roth IRA?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I reduce my tax liability as a self-employed individual?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
                                 
 
 {% endblock %}
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
