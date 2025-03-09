@@ -1,0 +1,85 @@
+---
+title: 'Contact'
+description: 'TODO'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact Us
+    order: 500
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="../../assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+{% include "components/banner-interior.html"%}
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact-490">
+    <div class="cs-container">
+        <!-- Contact Info -->
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Contact Information</h2>
+            <p class="cs-text">
+                Contact us with any questions, comment or concerns you may have. We welcome your feedback and reply to inquiries in a timely manner.
+            </p>
+            
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a href="" class="cs-link">
+                17 Victoria Street Carelton Place, ON
+            </a>
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a href="mailto:info@aurumhealth.ca" class="cs-link">info@aurumhealth.ca</a>
+            <!--Phone-->
+            <span class="cs-header">Phone</span>
+            <a href="tel:425-686-9566" class="cs-link">(613) 253-3456</a>
+            <!--Hours-->
+            <span class="cs-header">Hours</span>
+            <div class="cs-margin-bottom-1"><strong>Monday: </strong>10:30am - 6:00pm</div>
+            <div class="cs-margin-bottom-1"><strong>Tuesday & Thursday: </strong>9:00am - 7:00pm</div>
+            <div class="cs-margin-bottom-1"><strong>Wednesday: </strong>8:00am - 6:30pm</div>
+            <div class="cs-margin-bottom-1"><strong>Friday: </strong>8:00am - 12:30pm</div>
+
+            <!--Social Buttons-->
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-facebook-white.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.socials.instagram }}">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-instagram-white.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Form -->
+        <form id="cs-form-490" name="Contact Form" method="post">
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+            </label>
+            <label class="cs-label message">
+                Message
+                <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I'm interested in..."></textarea>
+            </label>
+            <button class="cs-button-solid" type="submit">Submit Message Now</button>
+        </form>
+    </div>
+</section>
+                                
+{% endblock %}
