@@ -308,7 +308,7 @@
     align-items: center;
   }
   #meet-team-1141 .cs-text {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   #meet-team-1141 .cs-title {
     max-width: 20ch;
@@ -322,7 +322,7 @@
   }
   #meet-team-1141 .cs-card-group {
     width: 100%;
-    max-width: 39.375rem;
+    max-width: 41.375rem;
     margin: 0;
     padding: 0;
     display: flex;

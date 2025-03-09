@@ -218,19 +218,20 @@ media="print" onload="this.media='all'; this.onload=null;">
                 <h2 class="cs-title">Meet Our Wellness Experts</h2>
             </div>
             <span class="cs-text">Meet the dedicated practitioners behind Aurum Health and discover how our combined expertise in traditional healing and modern therapeutic techniques can support your wellness journey</span>
+            <a href="/meet-the-team" class="cs-button-solid">Learn More</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-picture">
                    <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 656, height: 814 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 656, height: 814 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 656, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 1100, height: 900, position: "attention" }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 1100, height: 900 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 1100, height: 900 }) | jpeg %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Photo of Patricia" width="656" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 850, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 850, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 850, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/patricia-2.png" | resize({ width: 1100, height: 830 }) | jpeg %}" alt="Photo of Patricia" width="656" height="814" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <div class="cs-info">
                     <span class="cs-name">Patricia Saliba</span>
@@ -254,7 +255,6 @@ media="print" onload="this.media='all'; this.onload=null;">
                     <span class="cs-job">RMT</span>
                 </div>
             </li>
-            <a href="/meet-the-team" class="cs-button-solid">Learn More</a>
         </ul>
     </div>
 </section>
@@ -353,8 +353,5 @@ media="print" onload="this.media='all'; this.onload=null;">
         </ul>
     </div>
 </section>
-                                
-                                                 
-                                
-    {% include 'components/cta.html' %}
+{% include 'components/cta.html' %}
 {% endblock %}

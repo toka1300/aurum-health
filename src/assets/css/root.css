@@ -385,7 +385,7 @@ html {
   #cs-navigation .cs-container {
     width: 100%;
     /* 16px - 20px */
-    padding: clamp(1rem, 2.5vw, 1.25rem) 1rem;
+    padding: 0 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -396,7 +396,7 @@ html {
   #cs-navigation .cs-logo {
     position: relative;
     width: auto;
-    height: clamp(2rem, 6.4vw, 3rem);
+    height: clamp(5rem, 8.4vw, 5rem);
     margin: 0 auto 0 0;
     padding: 0;
     box-sizing: border-box;
@@ -926,7 +926,7 @@ html {
     top: 50%;
     right: -1.25rem;
     transform: translateY(-50%);
-    height: auto;
+    height: 100%;
     width: 0.9375rem;
   }
   #cs-navigation .cs-drop-ul {
@@ -1112,9 +1112,9 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 0;
-    height: 4.0625rem;
+    height: 100%;
     max-width: 21.875rem;
-    width: 18.4%;
+    width: auto;
     padding: 0;
   }
   #cs-navigation .cs-logo img {

@@ -1,0 +1,142 @@
+---
+title: 'Services'
+description: 'TODO'
+permalink: 'services/'
+eleventyNavigation:
+    key: Services
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="../../assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+    {% include 'components/banner-interior.html' %}
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1443">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1022, height: 724 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1022, height: 724 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1022, height: 724 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1300, height: 1090 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1300, height: 1090 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1300, height: 1090 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/health-coaching-2.png" | resize({ width: 1022, height: 724 }) | jpeg %}" alt="Health Coach pointing at nutritional program" width="1300" height="1090" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Unlock your body's potential</span>
+                <h2 class="cs-title">Health Coaching</h2>
+                <p class="cs-text">
+                    Our holistic health coaching creates a bridge between where you are now and where you want to be on your wellness journey. Through in-depth assessment tools like functional lab testing, iridology, and thermography, we identify the unique factors affecting your health—from nutritional imbalances and food sensitivities to hormonal disruptions and environmental toxins.
+                </p>
+                <p class="cs-text">
+                    Your personalized coaching plan integrates nutrition, lifestyle modifications, and targeted supplementation to address root causes rather than symptoms, empowering you with the knowledge and support needed to achieve sustainable wellness and prevent future health challenges.
+                </p>
+            <a href="" class="cs-button-solid">Learn More</a> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="sbs-1443" class="reverse">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1022, height: 724 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1022, height: 724 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1022, height: 724 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1300, height: 1090 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1300, height: 1090 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1300, height: 1090 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/massage-2.jpg" | resize({ width: 1022, height: 724 }) | jpeg %}" alt="Health Coach pointing at nutritional program" width="1300" height="1090" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-content">
+                <span class="cs-topper">The Healing Power of Touch</span>
+                <h2 class="cs-title">Massage Therapy</h2>
+                <p class="cs-text">
+                    Our therapeutic massage services go beyond temporary relaxation to create meaningful shifts in your body's healing systems. Each session is tailored to your specific needs, whether you're experiencing chronic pain, recovering from injury, or seeking stress reduction and improved mobility.
+                </p>
+                <p class="cs-text">
+                    Using a blend of techniques drawn from various modalities, our skilled practitioners work to release fascial restrictions, improve lymphatic flow, enhance circulation, and support your nervous system's regulation. Regular massage therapy serves as both treatment and prevention—reducing inflammation, accelerating recovery, and maintaining optimal tissue health for improved overall function.
+                </p>
+            <a href="" class="cs-button-solid">Learn More</a> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="sbs-1443">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1022, height: 724 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1022, height: 724 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1022, height: 724 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1300, height: 1090 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1300, height: 1090 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1300, height: 1090 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/vagus-nerve-pic.png" | resize({ width: 1022, height: 724 }) | jpeg %}" alt="Health Coach pointing at nutritional program" width="1300" height="1090" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Rebalance Your nervous system</span>
+                <h2 class="cs-title">Vagal Nerve Regulation</h2>
+                <h4>Non-Invasive Vagus Nerve Simulation</h4>
+                <p class="cs-text">
+                    The concept of passive or active electrically stimulating the auricular branch of the vagus nerve (ABVN) is now gaining recognition in literature.  Called - non-invasive vagus nerve stimulation (VNS) - VNS has been reported to improve HRV, activate the parasympathetic system, to reduce inflammation, respiratory dysfunction, and the reduction of pro-inflammatory cytokines.
+                </p>
+                <h4>Dolphin Vagus Nerve Stimulation activates Vagal Tone</h4>
+                <p class="cs-text">
+                   Dolphin Vagal Nerve Stimulation has been proven in science to activate the parasympathetic system <a href="https://www.liebertpub.com/doi/10.1089/acm.2019.0267?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub=pubmed" target="_blank">(Armstrong 2019)</a>, which reduces lung inflammation <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7399203/#B62" target="_blank">(Kaniusas 2019)</a>, and pro-inflammatory cytokines to improve respiratory dysfunction <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7399203/#B116" target="_blank">(Tracey, 2007)</a>.
+                </p>
+                <p class="cs-text">Learn more about vagus nerve stimulation <a href="https://www.dolphinmps.com/what-is-vagus-nerve/" target="_blank">here</a>.</p>
+            <a href="" class="cs-button-solid">Book Appointment</a> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="sbs-1443" class="reverse">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1022, height: 724 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1022, height: 724 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1022, height: 724 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1300, height: 1090 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1300, height: 1090 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1300, height: 1090 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/scar-tissue-treatment.jpg" | resize({ width: 1022, height: 724 }) | jpeg %}" alt="Health Coach pointing at nutritional program" width="1300" height="1090" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Restore function, Reduce pain</span>
+                <h2 class="cs-title">Scar Tissue Treatment</h2>
+                <p class="cs-text">
+                    Scar tissue—whether from surgery, injury, or chronic inflammation—creates more than cosmetic concerns; it can disrupt fascial connections throughout your body, creating pain and dysfunction far from the original site. Our comprehensive scar tissue treatment protocols use specialized manual techniques to release adhesions, improve tissue mobility, and restore proper communication between affected areas.
+                </p>
+                <p class="cs-text">
+                    By addressing these restrictions, we help eliminate pain patterns that may have persisted despite other interventions. Our integrated approach combines hands-on therapy with movement education and home care strategies, creating lasting improvements in both function and comfort while reducing reliance on pain medications.
+                </p>
+            <a href="" class="cs-button-solid">Book Appointment</a> 
+            </div>
+
+        </div>
+    </div>
+</section>
+                                
+
+{% endblock %}
