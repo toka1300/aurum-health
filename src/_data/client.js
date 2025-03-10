@@ -9,7 +9,7 @@ module.exports = {
         "province": "ON",
         "postalCode": "K7C 2W2",
         "country": "Canada",
-        "mapLink": "https://maps.app.goo.gl/nH4gkHKw5TfPTDBx9" //TODO
+        "mapLink": "https://maps.app.goo.gl/XoeM2TSaSnMzQZK88"
     },
     "socials": {
         "facebook": "https://www.facebook.com/p/Darlington-Acupuncture-and-Massage-Therapy-100041894211134/",
