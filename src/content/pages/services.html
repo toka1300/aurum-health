@@ -5,6 +5,8 @@ permalink: 'services/'
 eleventyNavigation:
     key: Services
     order: 500
+    hideOnDesktop: true
+    hideOnMobile: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -19,7 +21,7 @@ eleventyNavigation:
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs-1443">
+<section class="sbs-1443" id="health-coaching">
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Mobile Image-->
@@ -48,7 +50,7 @@ eleventyNavigation:
     </div>
 </section>
 
-<section id="sbs-1443" class="reverse">
+<section class="sbs-1443 reverse" id="massage">
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Mobile Image-->
@@ -77,7 +79,7 @@ eleventyNavigation:
     </div>
 </section>
 
-<section id="sbs-1443">
+<section class="sbs-1443" id="vagus-therapy">
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Mobile Image-->
@@ -109,7 +111,7 @@ eleventyNavigation:
     </div>
 </section>
 
-<section id="sbs-1443" class="reverse">
+<section class="sbs-1443 reverse" id="scar-treatment">
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Mobile Image-->
@@ -137,6 +139,8 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+
+{# TODO: Thermography? #}
                                 
 
 {% endblock %}

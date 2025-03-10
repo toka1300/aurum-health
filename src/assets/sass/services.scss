@@ -4,9 +4,10 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbs-1443 {
+    .sbs-1443 {
         padding: var(--sectionPadding);
-        overflow: hidden;
+        scroll-margin-top: 6rem;
+        overflow: clip;
         
         &:last-of-type {
             padding-bottom: clamp(25rem, 30vw, 28.125rem);
@@ -183,7 +184,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #sbs-1443 {
+    .sbs-1443 {
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
