@@ -252,14 +252,74 @@
   #faq-1346 {
     padding: var(--sectionPadding);
     position: relative;
+    padding-bottom: clamp(25rem, 30vw, 28.125rem);
+  }
+  #faq-1346 .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2.15vw, 0.75em);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 37em;
+    height: 50.3125em;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    position: relative;
+    z-index: 1;
+  }
+  #faq-1346 .cs-picture {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+  }
+  #faq-1346 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #faq-1346 .cs-picture1 {
+    width: 33.875em;
+    height: 40.4375em;
+    border-radius: 17.8125em;
+    top: 0;
+    left: 0;
+  }
+  #faq-1346 .cs-picture2 {
+    width: 25.8125em;
+    height: 30.8125em;
+    border-radius: 12.875em;
+    border: 0.75em solid #fff;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+  }
+  #faq-1346 .cs-flower {
+    width: 22.6875em;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: -1.875em;
+    left: -0.625em;
+    z-index: -1;
+    transform: rotate(-142deg);
+  }
+  #faq-1346 .cs-sense {
+    width: 5.0625em;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 28.75em;
+    right: 1.375em;
+    transform: rotate(164deg);
   }
   #faq-1346 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
@@ -273,6 +333,7 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
+    margin-bottom: 2rem;
   }
   #faq-1346 .cs-flex-group {
     width: 100%;
@@ -502,8 +563,16 @@
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
 }
+@media only screen and (min-width: 64rem) {
+  #faq-1346 .cs-container {
+    flex-direction: row;
+  }
+}
 /* Desktop - 1024px */
 @media only screen and (min-width: 48rem) {
+  #faq-1346 .cs-image-group {
+    font-size: min(1.15vw, 1em);
+  }
   #faq-1346 .cs-container {
     max-width: 80rem;
   }

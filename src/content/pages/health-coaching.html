@@ -28,14 +28,14 @@ eleventyNavigation:
             <!--Main Image-->
             <picture class="cs-picture cs-picture1">
                <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 526, height: 628 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 526, height: 628 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 1084, height: 1294 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/healthy-food.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 1084, height: 1294}) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/healthy-food.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <picture class="cs-picture cs-picture2">
                <!--Mobile Image-->
@@ -62,7 +62,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Each body tells its own story. Let us help you understand yours.
             </p>
-            <a href="TODO" class="cs-button-solid">Book Appointment</a>
+            <a href="{{ client.bookingLink }}" target="_blank" class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
 </section>
@@ -137,7 +137,7 @@ eleventyNavigation:
                         <h3 class="cs-h3">Hormones</h3>
                     </div>
                 </li>
-                <span>* For more information on the types of tests offered visit https://mosaicdx.com/</span>
+                <span>* For more information on the types of tests offered visit <a href=" https://mosaicdx.com/" target="_blank">Mosaic Diagnostics</a></span>
             </ul>             
         </div>
     </div>
@@ -179,7 +179,7 @@ eleventyNavigation:
             <p class="cs-text vertical-center">
                 <img src="../../assets/svgs/smile.svg" alt="smile icon">Iridology is part of every initial Health Coaching Assessment 
             </p>
-            <a href="TODO" class="cs-button-solid">Book Appointment</a>
+            <a href="{{ client.bookingLink }}" target="_blank" class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
 </section>
@@ -220,11 +220,15 @@ eleventyNavigation:
             <span class="cs-topper">Advanced Preventative Screening</span>
             <h2 class="cs-title">Thermography Assessment</h2>
             <p class="cs-text">
-                Medical Thermography provides a non-invasive, comprehensive assessment of the level of inflammation in your body – the most important indicator of your current state of health. The skin responds to physiological changes and a thermography camera generates a thermal map of the body that shows normal or abnormal thermal patterns These thermal patterns identify: - Inflammation, congestion, and injury. - The cause of illness such as dental issues, musculoskeletal imbalances, toxins/pathogens, or emotional stress - Assessing these thermal variations provides an in depth look at changes in the function of the body function and can aid in developing a targeted treatment plan.
+                Medical Thermography provides a non-invasive, comprehensive assessment of the level of inflammation in your body - the most important indicator of your current state of health. The skin responds to physiological changes and a thermography camera generates a thermal map of the body that shows normal or abnormal thermal patterns. These thermal patterns identify: inflammation, congestion, and injury. The cause of illness such as dental issues, musculoskeletal imbalances, toxins/pathogens, or emotional stress. Assessing these thermal variations provides an in depth look at changes in the function of the body function and can aid in developing a targeted treatment plan.
             </p>
-            <span><strong>What's Included?</strong></span>
-            <p class="cs-text">
-                Imaging appointment: 30-60 minutes in length depending on study. An in dept health assessment in the form of a written report. This report tells you what the thermal patterns in your study mean, what the key areas of focus are, and what the treatment plan should be. Follow-up phone call with our clinic director and thermology interpreter to review findings. We recommend booking a followup thermography scan to monitor the effectiveness of your treatment protocol and help to determine if your state of health is improving.
+            <h4>What's Included?</h4>
+            <ul class="cs-text list">
+                <li>Imaging appointment: 30-60 minutes in length depending on study.</li>
+                <li>An in dept health assessment in the form of a written report. This report tells you what the thermal patterns in your study mean, what the key areas of focus are, and what the treatment plan should be. </li>
+                <li>Follow-up phone call with our clinic director and thermology interpreter to review findings.</li>
+                <li>We recommend booking a followup thermography scan to monitor the effectiveness of your treatment protocol and help to determine if your state of health is improving.</li>
+            </ul>
             <p class="cs-text">
                Prevention is becoming the medical priority in today’s culture, and we are no longer satisfied to accept detection, treatment or management of disease. We believe there is no reason to exaggerate the benefits of Thermography which is unique and beneficial enough to stand on its own merit. Our primary goal is to provide high quality, professional imaging services and a meaningful report to the patient and the referring doctor to support ongoing health assessment and prevention. The mission of Thermography Medical Clinic is to improve health outcomes by providing “The Future of Preventative Healthcare … Today!”.
             </p>
@@ -249,7 +253,7 @@ eleventyNavigation:
                 </ul>
         </div>
         <span>For more info and to book an appointment please click the button below.</span>
-        <a href="" class="cs-button-solid margin-top-2">Book Appointment</a>
+        <a href="{{ client.bookingLink }}" target="_blank"  class="cs-button-solid margin-top-2">Book Appointment</a>
     </div>
     <!--Floating Leaf-->
     <img class="cs-floater" loading="lazy" decoding="async" src="../../assets/images/leaf-graphic.png" alt="leaf" width="216" height="384" aria-hidden="true">

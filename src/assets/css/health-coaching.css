@@ -215,6 +215,13 @@
   #RPsbsr-693 .cs-content {
     width: 48%;
   }
+  #RPsbs-693 .cs-content .cs-text.list,
+  #RPsbsr-693 .cs-content .cs-text.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
 }
 /*-- -------------------------- -->
 <---   Side By Side Reverse     -->
@@ -257,7 +264,7 @@
   }
 }
 /* Large Desktop - 1500px */
-@media only screen and (min-width: 93.75rem) {
+@media only screen and (min-width: 95.75rem) {
   #RPsbsr-693 .cs-floater {
     display: block;
   }

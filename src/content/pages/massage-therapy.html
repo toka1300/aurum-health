@@ -57,7 +57,7 @@ eleventyNavigation:
             <p class="cs-text">
                 For more info on Massage Therapy and Registered Massage Therapist please visit the <a href="https://www.rmtao.com/" target="_blank">website of the Registered Massage Therapists of Ontario</a>.
             </p>
-            <a href="" class="cs-button-solid">Book Appointment</a>
+            <a href="{{ client.bookingLink }}" target="_blank"  class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
 </section>
@@ -72,7 +72,7 @@ eleventyNavigation:
             <span class="cs-topper">Discover the restorative benefits</span>
             <h2 class="cs-title">Benefits of Massage</h2>
             <p class="cs-text">
-                Our therapeutic massage techniques provides relief, restores function and rehabilitates - massage has been shown to help with the following.
+                Our therapeutic massage techniques provide relief, restore function and rehabilitate - massage has been shown to help with the following.
             </p>
         </div>
         <div class="sbs-card-text">
@@ -89,7 +89,7 @@ eleventyNavigation:
                         <span>Whiplash and Whiplash Associated Disorders</span>
                     </li>
                 </ul>
-                <a href="" class="cs-button-solid">Book Appointment</a>
+                <a href="{{ client.bookingLink }}" target="_blank"  class="cs-button-solid">Book Appointment</a>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
@@ -198,75 +198,55 @@ eleventyNavigation:
                     <li class="cs-li">Whiplash</li>
                 </ul>
             </div>
-            <a href="" class="cs-button-solid">Book Appointment</a>
+            <a href="{{ client.bookingLink }}" target="_blank"  class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                    NEWWW -FAQ                       -->
 <!-- ============================================ -->
 
-<section id="RPsbs-693" class="cs-wide">
+
+<section id="faq-1346">
     <div class="cs-container">
         <div class="cs-image-group">
             <!--Main Image-->
             <picture class="cs-picture cs-picture1">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/baby.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
+            <!--Mobile Image-->
             <picture class="cs-picture cs-picture2">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/senior.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 400, height: 480 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/senior.png" | resize({ width: 826, height: 986 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/senior.png" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
             <img class="cs-sense" loading="lazy" decoding="async" src="../../assets/svgs/spidey-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
         </div>
-        <div class="cs-content">
-            <span class="cs-topper">Research Backed Benefits</span>
-            <h2 class="cs-title">Therapeutic Massage Throughout Life's Journey</h2>
-            <p class="cs-text">
-                Research from leading institutions demonstrates that massage therapy provides significant benefits across all life stages, from promoting growth in premature infants to reducing anxiety in elderly care. From enhancing athletic performance and supporting pregnancy wellness to boosting workplace productivity and strengthening immunity, therapeutic massage offers evidence-based solutions for diverse health needs.
-            </p>
-            <p class="cs-text">
-                Massage therapy should only be provided by a Registered Massage Therapist (RMT). An RMT is a primary healthcare provider in Ontario and anyone may visit an RMT of their choice. Massage therapy can be used as a treatment for both acute and chronic conditions. RMTs work with a wide variety of patients in the treatment of illness, injury rehabilitation and disability.
-            </p>
-            <p class="cs-text">
-                The services of an RMT are not covered under the Ontario Health Insurance Plan (OHIP); however, many extended health benefit plans will cover all or part of the services provided by an RMT. A referral or prescription is not required to visit an RMT, although some insurance companies may require this. Massage therapy treatments may also be reimbursed by automobile insurance companies, if the client was in a motor vehicle accident, or in the case of workplace injuries, by the Workplace Safety and Insurance Board (WSIB).
-            </p>
-            <p class="cs-text">
-                For more info on Massage Therapy and Registered Massage Therapist please visit the <a href="https://www.rmtao.com/" target="_blank">website of the Registered Massage Therapists of Ontario</a>.
-            </p>
-            <a href="" class="cs-button-solid">Book Appointment</a>
-        </div>
-    </div>
-                                
-<section id="faq-1346">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Research Backed Benefits</span>
-            <h2 class="cs-title">Therapeutic Massage Throughout Life's Journey</h2>
-            <p class="cs-text">
-                Research from leading institutions demonstrates that massage therapy provides significant benefits across all life stages, from promoting growth in premature infants to reducing anxiety in elderly care. From enhancing athletic performance and supporting pregnancy wellness to boosting workplace productivity and strengthening immunity, therapeutic massage offers evidence-based solutions for diverse health needs.
-            </p>
-        </div>
-            <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+        <div class="cs-text-faq">
+            <div class="cs-content">
+                <span class="cs-topper">Research Backed Benefits</span>
+                <h2 class="cs-title">Therapeutic Massage Throughout Life's Journey</h2>
+                <p class="cs-text">
+                    Research from leading institutions demonstrates that massage therapy provides significant benefits across all life stages, from promoting growth in premature infants to reducing anxiety in elderly care. From enhancing athletic performance and supporting pregnancy wellness to boosting workplace productivity and strengthening immunity, therapeutic massage offers evidence-based solutions for diverse health needs.
+                </p>
+            </div>
+
             <div class="cs-wrapper">
-                <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
                 <ul class="cs-faq-group">
                     <li class="cs-faq-item">
                         <button class="cs-button">
@@ -323,13 +303,11 @@ eleventyNavigation:
                     </li>
                 </ul>
             </div>
+
+        </div>
         </div>
     </div>
 </section>
                                 
 
 {% endblock %}
-
-<!-- ============================================ -->
-<!--                    FAQ                       -->
-<!-- ============================================ -->

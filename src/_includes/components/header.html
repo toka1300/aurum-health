@@ -14,11 +14,11 @@
                 </a>
             </div>
             <div class="cs-top-contact">
-                <a href="{{ client.address.mapLink }} class="cs-top-link" target="_blank">
+                <a href="{{ client.address.mapLink }}" class="cs-top-link" target="_blank">
                     <img class="cs-link-icon" src="../../assets/svgs/map-pin.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
-                    {{client.address.lineOne}}, <span class="header-city">{{ client.address.city}}</span>
+                    {{client.address.lineOne}}<span class="header-city">, {{ client.address.city}}</span>
                 </a>
-                <a href="" class="cs-top-link">
+                <a href="tel:{{ client.phoneForTel }}" class="cs-top-link">
                     <img class="cs-link-icon" src="../../assets/svgs/phone.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
                     {{client.phoneFormatted}}
                 </a>

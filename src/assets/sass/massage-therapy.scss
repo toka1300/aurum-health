@@ -298,14 +298,81 @@
     #faq-1346 {
         padding: var(--sectionPadding);
         position: relative;
+        padding-bottom: clamp(25rem, 30vw, 28.125rem);
+
+        .cs-image-group {
+            /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+            font-size: min(2.15vw, 0.75em);
+            /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+            width: 37em;
+            height: calc(805 / 16 * 1em);
+            /* prevents flexbox from squishing it */
+            flex: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-picture {
+            overflow: hidden;
+            display: block;
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-picture1 {
+            width: calc(542 / 16 * 1em);
+            height: calc(647 / 16 * 1em);
+            border-radius: calc(285 / 16 * 1em);
+            top: 0;
+            left: 0;
+        }
+
+        .cs-picture2 {
+            width: calc(413 / 16 * 1em);
+            height: calc(493 / 16 * 1em);
+            border-radius: calc(206 / 16 * 1em);
+            border: calc(12 / 16 * 1em) solid #fff;
+            background-color: #fff;
+            bottom: 0;
+            right: 0;
+        }
+
+        .cs-flower {
+            width: calc(363 / 16 * 1em);
+            height: auto;
+            display: block;
+            position: absolute;
+            bottom: calc(-30 / 16 * 1em);
+            left: calc(-10 / 16 * 1em);
+            z-index: -1;
+            transform: rotate(-142deg);
+        }
+
+        .cs-sense {
+            width: calc(81 / 16 * 1em);
+            height: auto;
+            display: block;
+            position: absolute;
+            bottom: calc(460 / 16 * 1em);
+            right: calc(22 / 16 * 1em);
+            transform: rotate(164deg);
+        }
 
         .cs-container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
             /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
             position: relative;
@@ -320,6 +387,7 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
+            margin-bottom: 2rem;
         }
 
         .cs-flex-group {
@@ -586,9 +654,23 @@
     }
 }
 
+@media only screen and (min-width: 64rem) {
+    #faq-1346 .cs-container{
+        flex-direction: row;
+    }
+}
+
 /* Desktop - 1024px */
 @media only screen and (min-width: 48rem) {
     #faq-1346 {
+        .cs-image-group {
+            font-size: min(1.15vw, 1em);
+        }
+
+        // .cs-content {
+        //     width: 48%;
+        // }
+
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
         }

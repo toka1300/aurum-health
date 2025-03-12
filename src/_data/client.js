@@ -3,6 +3,7 @@ module.exports = {
     "email": "patricia@aurumhealth.ca",
     "phoneForTel": "613-253-3456",
     "phoneFormatted": "(613) 253-3456",
+    "bookingLink": "https://aurumhealth.noterro.com/",
     "address": {
         "lineOne": "19 Victoria St.",
         "city": "Carelton Place",

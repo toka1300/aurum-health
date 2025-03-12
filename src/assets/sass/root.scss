@@ -9,6 +9,7 @@
         --secondary: #77047F;
         --secondaryLight: #001f3f;
         --brightGreen: #7EC403;
+        --greyBackground: #F7F7F7;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
@@ -488,6 +489,7 @@ html {
             img {
                 width: auto;
                 height: 100%;
+                padding: 2px 0;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
@@ -1949,6 +1951,10 @@ html {
             &:hover {
                 background-color: #ffffff;
                 color: var(--headerColor);
+
+                &:before {
+                    width: 0;
+                }
             }
         }
 
@@ -1985,12 +1991,11 @@ html {
         }
 
         .cs-logo {
-            width: 100%;
             max-width: calc(317/16 * 1rem);
             height: auto;
-
+            
             img {
-                width: 100%;
+                width: clamp(21rem, 73vw, 25rem);
                 height: auto;
             }
         }
@@ -2124,6 +2129,7 @@ html {
 
         .cs-nav-li {
             list-style: none;
+            text-align: center;
         }
 
         .cs-nav-link {

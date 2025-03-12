@@ -8,6 +8,7 @@
     --secondary: #77047F;
     --secondaryLight: #001f3f;
     --brightGreen: #7EC403;
+    --greyBackground: #F7F7F7;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -411,6 +412,7 @@ html {
   #cs-navigation .cs-logo img {
     width: auto;
     height: 100%;
+    padding: 2px 0;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -1659,6 +1661,9 @@ html {
     background-color: #ffffff;
     color: var(--headerColor);
   }
+  #cs-footer-1865 .cs-button-solid:hover:before {
+    width: 0;
+  }
   #cs-footer-1865 .cs-submit {
     width: 100%;
     color: var(--bodyTextColorWhite);
@@ -1688,12 +1693,11 @@ html {
     gap: clamp(2rem, 4vw, 3rem);
   }
   #cs-footer-1865 .cs-logo {
-    width: 100%;
     max-width: 19.8125rem;
     height: auto;
   }
   #cs-footer-1865 .cs-logo img {
-    width: 100%;
+    width: clamp(21rem, 73vw, 25rem);
     height: auto;
   }
   #cs-footer-1865 .cs-social {
@@ -1806,6 +1810,7 @@ html {
   }
   #cs-footer-1865 .cs-nav-li {
     list-style: none;
+    text-align: center;
   }
   #cs-footer-1865 .cs-nav-link {
     /* 14px - 16px */

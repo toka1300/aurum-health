@@ -5,6 +5,7 @@
 @media only screen and (min-width: 0rem) {
   #services-1131 {
     padding: var(--sectionPadding);
+    background-color: var(--greyBackground);
   }
   #services-1131 .cs-container {
     width: 100%;
@@ -57,6 +58,7 @@
     justify-content: center;
     position: relative;
     z-index: 1;
+    text-decoration: none;
     transition: box-shadow 0.3s, border-color 0.3s;
   }
   #services-1131 .cs-item:hover {
@@ -101,7 +103,6 @@
     transition: color 0.3s;
   }
   #services-1131 .cs-item-text {
-    /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     max-width: 28.125rem;
@@ -197,22 +198,22 @@
     grid-template-rows: auto auto;
     justify-items: center;
     align-items: center;
-    gap: 1rem;
     margin: auto;
     margin-top: 3rem;
     position: relative;
   }
   #stats-888 .cs-item {
+    grid-column: span 1;
+    width: 7rem;
+    height: 7rem;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 100%;
     text-align: center;
     padding: clamp(2.75rem, 5vw, 3.75rem) 2rem;
     box-sizing: border-box;
     overflow: hidden;
-    grid-column: span 2;
   }
   #stats-888 .cs-item:nth-of-type(1) {
     background-color: rgba(76, 92, 47, 0.25);
@@ -234,20 +235,11 @@
     display: none;
   }
   #stats-888 .cs-desc {
-    font-size: clamp(1rem, 2vw, 1rem);
+    font-size: clamp(0.75rem, 2vw, 1rem);
     line-height: 1.2em;
-    font-weight: 700;
     text-align: inherit;
     margin: 0;
     color: var(--headerColor);
-  }
-}
-/* Tablet - 650px */
-@media only screen and (min-width: 40.625rem) {
-  #stats-888 .cs-item {
-    grid-column: span 1;
-    width: 10rem;
-    height: 10rem;
   }
   #stats-888 .cs-stem {
     display: initial;
@@ -260,12 +252,46 @@
     margin-top: -23px;
   }
   #stats-888 .cs-stem:nth-of-type(1) {
-    transform: rotate(-54deg) translateX(97px) translateY(88px);
+    transform: rotate(-54deg) translateX(46px) translateY(67px);
+    height: 80px;
+  }
+  #stats-888 .cs-stem:nth-of-type(3) {
+    transform: rotate(45deg) translateX(-55px) translateY(61px);
+    z-index: -1;
+    height: 89px;
+  }
+}
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #stats-888 .cs-item {
+    grid-column: span 1;
+    width: 10rem;
+    height: 10rem;
+  }
+  #stats-888 .cs-desc {
+    font-weight: 700;
+  }
+  #stats-888 .cs-card-group {
+    gap: 1rem;
+  }
+  #stats-888 .cs-stem {
+    display: initial;
+    position: relative;
+    width: 12px;
+    height: 150px;
+    background: linear-gradient(to top, var(--primary), var(--primaryLight));
+    border-radius: 10px;
+    margin: auto;
+    margin-top: -23px;
+  }
+  #stats-888 .cs-stem:nth-of-type(1) {
+    transform: rotate(-54deg) translateX(93px) translateY(88px);
     height: 129px;
   }
   #stats-888 .cs-stem:nth-of-type(3) {
-    transform: rotate(45deg) translateX(-104px) translateY(71px);
+    transform: rotate(45deg) translateX(-104px) translateY(75px);
     z-index: -1;
+    height: 150px;
   }
 }
 /* Small Desktop - 1024px */
@@ -285,6 +311,7 @@
   #meet-team-1141 {
     padding: var(--sectionPadding);
     overflow: hidden;
+    background-color: var(--greyBackground);
   }
   #meet-team-1141 .cs-container {
     width: 100%;
@@ -328,14 +355,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* 16px - 20px */
+    align-items: center;
     gap: clamp(1rem, 2.3vw, 1.25rem);
     position: relative;
   }
   #meet-team-1141 .cs-item {
     list-style: none;
-    width: 100%;
-    height: 32rem;
+    width: clamp(20rem, 85%, 30rem);
+    height: clamp(28rem, 87vw, 32rem);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -392,7 +419,8 @@
     padding: 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #f7f7f7;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
@@ -469,7 +497,7 @@
     /* clips the orbs from causing overflow issues */
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     padding-bottom: clamp(25rem, 30vw, 28.125rem);
   }
   #reviews-1396 .cs-container {
