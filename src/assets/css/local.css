@@ -27,7 +27,7 @@
     align-items: center;
   }
   #services-1131 .cs-topper {
-    color: #767676;
+    color: var(--primary);
   }
   #services-1131 .cs-card-group {
     margin: 0;

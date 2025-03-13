@@ -290,6 +290,9 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+  #cs-navigation.cs-active .cs-li:nth-of-type(5) {
+    order: 5;
+  }
   #cs-navigation .cs-top-bar {
     width: 100%;
     display: flex;
@@ -1141,6 +1144,9 @@ html {
     padding: 2rem 0;
     list-style: none;
     flex: none;
+  }
+  #cs-navigation .cs-li:nth-of-type(5) {
+    order: 5;
   }
   #cs-navigation .cs-li-link {
     position: relative;

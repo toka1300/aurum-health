@@ -344,6 +344,10 @@ html {
             .cs-li {
                 transform: translateY(0);
                 opacity: 1;
+
+            &:nth-of-type(5) {
+                order: 5
+            }
             }
         }
 
@@ -1355,6 +1359,10 @@ html {
             padding: calc(32 / 16 * 1rem) 0;
             list-style: none;
             flex: none;
+
+            &:nth-of-type(5) {
+                order: 5
+            }
         }
 
         .cs-li-link {
