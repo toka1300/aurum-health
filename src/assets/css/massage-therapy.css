@@ -15,7 +15,7 @@
   margin-left: 1.5rem;
 }
 #RPsbsr-693 .cs-content .cs-li::marker {
-  font-size: 3em;
+  font-size: 2em;
 }
 #RPsbsr-693 .cs-content .cs-li .bullet-transform {
   display: inline-block;
@@ -258,7 +258,7 @@
     /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
     font-size: min(2.15vw, 0.75em);
     /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
-    width: 37em;
+    width: 42em;
     height: 50.3125em;
     /* prevents flexbox from squishing it */
     flex: none;
@@ -327,12 +327,12 @@
   }
   #faq-1346 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    text-align: start;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2rem;
   }
   #faq-1346 .cs-flex-group {
@@ -490,18 +490,16 @@
     opacity: 1;
   }
   #faq-1346 .cs-button {
-    /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.2em;
     text-align: left;
     font-weight: bold;
-    /* 16px - 24px top & bottom */
-    /* 16px - 20px left & right */
     padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 2vw, 1.25rem);
     background-color: #fff;
     border: none;
     color: var(--headerColor);
-    display: block;
+    display: flex;
+    gap: 0.5rem;
     width: 100%;
     position: relative;
     transition: background-color 0.3s, color 0.3s;
@@ -562,10 +560,23 @@
     overflow: hidden;
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
+  #faq-1346 .cs-floater {
+    display: none;
+    width: clamp(5rem, 9vw, 13.5rem);
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 @media only screen and (min-width: 64rem) {
   #faq-1346 .cs-container {
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 81.25rem) {
+  #faq-1346 .cs-floater {
+    display: block;
   }
 }
 /* Desktop - 1024px */

@@ -10,7 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/side-by-side.css">
+    {# <link rel="stylesheet" href="/assets/css/side-by-side.css"> #}
+    <link rel="stylesheet" href="/assets/css/meet-the-team.css">
 {% endblock %}
 
 {% block body %}
@@ -21,7 +22,7 @@ eleventyNavigation:
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="RPsbs-693">
+<section class="RPsbs-693" id="patricia">
     <div class="cs-container">
         <div class="cs-image-group">
             <!--Main Image-->
@@ -31,12 +32,13 @@ eleventyNavigation:
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 526, height: 628 }) | webp %}" type="image/webp">
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 526, height: 628 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 1084, height: 1294 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 1084, height: 1294, position: "top" }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 1084, height: 1294 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" type="image/jpeg">
                <img src="{% getUrl "/assets/images/patricia.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Patricia headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
+            <img class="cs-sense" loading="lazy" decoding="async" src="../../assets/svgs/spidey-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
         </div>
         <div class="cs-content">
             <span class="cs-topper">Meet Patricia</span>
@@ -68,7 +70,7 @@ eleventyNavigation:
 <!--           Side By Side Reverse               -->
 <!-- ============================================ -->
 
-<section id="RPsbsr-693">
+<section class="RPsbsr-693" id="jenni">
     <div class="cs-container">
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture1">
@@ -83,8 +85,9 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/jenni.jpg" | resize({ width: 1084, height: 1294 }) | jpeg %}" alt="Jenni headshot" width="526" height="628" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <img class="cs-flower" loading="lazy" decoding="async" src="../../assets/svgs/abstract-flower.svg" alt="flower graphic" width="363" height="350" aria-hidden="true">
+            <img class="cs-sense" loading="lazy" decoding="async" src="../../assets/svgs/spidey-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
         </div>
-        <div class="cs-content">
+        <div class="cs-content" id="jenni">
             <span class="cs-topper">Meet Jenni</span>
             <h2 class="cs-title">Jenni Kerteston, RMT</h2>
             <p class="cs-text">
@@ -102,7 +105,6 @@ eleventyNavigation:
             <a href="{{ client.bookingLink }}" target="_blank" class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
-    <!--Floating Leaf-->
     <img class="cs-floater" loading="lazy" decoding="async" src="../../assets/images/leaf-graphic.png" alt="leaf" width="216" height="384" aria-hidden="true">
 </section>             
 {% endblock %}

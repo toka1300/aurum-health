@@ -160,6 +160,11 @@
             right: calc(22 / 16 * 1em);
             transform: rotate(164deg);
         }
+
+        &.single-photo .cs-sense {
+            top: -2rem;
+            right: 4rem;
+        }
     }
 }
 
@@ -215,6 +220,8 @@
             right: auto;
             left: 22/16em;
             transform: rotate(100deg);
+            left: 4rem;
+            top: -2rem;
         }
 
         .cs-floater {

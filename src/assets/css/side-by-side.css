@@ -160,6 +160,11 @@
     right: 1.375em;
     transform: rotate(164deg);
   }
+  #RPsbs-693.single-photo .cs-sense,
+  #RPsbsr-693.single-photo .cs-sense {
+    top: -2rem;
+    right: 4rem;
+  }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -205,6 +210,8 @@
     right: auto;
     left: 22/16em;
     transform: rotate(100deg);
+    left: 4rem;
+    top: -2rem;
   }
   #RPsbsr-693 .cs-floater {
     display: none;
