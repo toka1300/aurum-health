@@ -6,7 +6,7 @@ module.exports = {
     "bookingLink": "https://aurumhealth.noterro.com/",
     "address": {
         "lineOne": "19 Victoria St.",
-        "city": "Carelton Place",
+        "city": "Carleton Place",
         "province": "ON",
         "postalCode": "K7C 2W2",
         "country": "Canada",
