@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
     .sbs-1443 {
         padding: var(--sectionPadding);
+        padding-bottom: 2rem;
         scroll-margin-top: 6rem;
         overflow: clip;
         
@@ -53,6 +54,12 @@
             align-items: flex-start;
             flex-direction: column;
             gap: calc(24 / 16 * 1rem);
+        }
+
+        .cs-button-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-direction: column;
         }
         
         .cs-li {
@@ -185,6 +192,7 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     .sbs-1443 {
+        padding-bottom: 3.5rem;
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
@@ -196,6 +204,11 @@
         .cs-content {
             width: 50%;
             padding: calc(40 / 16 * 1rem) 0;
+        }
+
+        .cs-button-group {
+            gap: 1rem;
+            flex-direction: row;
         }
 
         .cs-picture {
