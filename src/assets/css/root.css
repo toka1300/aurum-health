@@ -1511,7 +1511,7 @@ html {
     position: relative;
   }
   #cs-footer-1865 .cs-nav-link:hover {
-    color: #8F5B34;
+    color: var(--primary);
   }
   #cs-footer-1865 .cs-nav-link:hover:before {
     width: 100%;
