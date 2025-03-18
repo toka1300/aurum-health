@@ -5,7 +5,7 @@ module.exports = {
     "phoneFormatted": "(613) 253-3456",
     "bookingLink": "https://aurumhealth.noterro.com/",
     "address": {
-        "lineOne": "19 Victoria St.",
+        "lineOne": "17 Victoria St.",
         "city": "Carleton Place",
         "province": "ON",
         "postalCode": "K7C 2W2",
