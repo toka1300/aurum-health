@@ -17,8 +17,6 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
             this.$activeFilter = $filters[0]
             this.$images = document.querySelectorAll(this.FAQselector)
 
-            this.$activeFilter.classList.add(this.activeClass)
-
             for (const $filter of $filters) {
             $filter.addEventListener('click', () => this.onClick($filter))
             }
