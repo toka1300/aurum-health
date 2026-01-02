@@ -461,7 +461,7 @@
     align-items: stretch;
   }
   #meet-team-1141 .cs-item {
-    width: 48%;
+    width: 79%;
   }
   #meet-team-1141 .cs-picture {
     height: 25.4375rem;
@@ -489,6 +489,7 @@
   }
   #meet-team-1141 .cs-item {
     width: 100%;
+    max-width: 22rem;
   }
 }
 /*-- -------------------------- -->
