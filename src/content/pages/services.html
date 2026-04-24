@@ -145,6 +145,35 @@ eleventyNavigation:
 
         </div>
     </div>
-</section>                      
+</section>
+
+<section class="sbs-1443 sbs-wide-image" id="osteopathy">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1022, height: 360 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1022, height: 360 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1022, height: 360 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1300, height: 458 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1300, height: 458 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1300, height: 458 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/osteopath.png" | resize({ width: 1022, height: 360 }) | jpeg %}" alt="Osteopath performing gentle manual therapy on a patient's lower back" width="1200" height="423" loading="eager" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Gentle Manual Therapy</span>
+                <h2 class="cs-title">Osteopathy</h2>
+                <p class="cs-text">
+                    Osteopathy is a gentle manual therapy practice aimed at restoring the physiological function of the body's interrelated structures. It is based on 3 principles: the body is a dynamic unit of function, the body has self healing capacity, and the structure and function of the body are related.
+                </p>
+                <p class="cs-text">
+                    An appointment usually consists of a case history taking, a general and specific assessment, and treatment.
+                </p>
+            <a href="https://aurumhealth.noterro.com/service/308328/One-hour-Initial-Assessment-and-treatment" target="_blank" class="cs-button-solid">Book Appointment</a>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 {% endblock %}
