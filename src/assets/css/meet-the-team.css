@@ -9,6 +9,8 @@
     position: relative;
     scroll-margin-top: 6rem;
     overflow: visible;
+    /* Temporary placeholder used when a practitioner's headshot has not
+       been supplied yet. Remove once the real <picture> is in place. */
   }
   .RPsbs-693:last-of-type,
   .RPsbsr-693:last-of-type {
@@ -129,6 +131,25 @@
     border-radius: 17.8125em;
     top: 0;
     left: 0;
+  }
+  .RPsbs-693 .cs-placeholder,
+  .RPsbsr-693 .cs-placeholder {
+    background-color: #efece6;
+    border: 0.125em dashed #c9c2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em;
+    box-sizing: border-box;
+  }
+  .RPsbs-693 .cs-placeholder-text,
+  .RPsbsr-693 .cs-placeholder-text {
+    font-size: 1.375em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #8a8472;
   }
   .RPsbs-693 .cs-picture2,
   .RPsbsr-693 .cs-picture2 {

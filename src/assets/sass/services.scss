@@ -221,4 +221,37 @@
         }
     }
 }
+
+/*-- -------------------------- -->
+<---   Wide Image Variant        -->
+<--- -------------------------- -*/
+/* For sbs-1443 sections whose source image is a wide banner rather than
+   a near-square photo. The picture keeps the source's natural aspect ratio
+   so the full scene is visible instead of being center-cropped. */
+@media only screen and (min-width: 0rem) {
+    .sbs-1443.sbs-wide-image {
+        .cs-picture {
+            min-height: 0;
+            aspect-ratio: 1200 / 423;
+            height: auto;
+        }
+
+        .cs-picture img {
+            object-position: center;
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    .sbs-1443.sbs-wide-image {
+        .cs-container {
+            align-items: center;
+        }
+
+        .cs-picture {
+            aspect-ratio: 1200 / 423;
+        }
+    }
+}
                                 

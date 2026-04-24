@@ -271,6 +271,23 @@ media="print" onload="this.media='all'; this.onload=null;">
                     <span class="cs-job">CH, CI, RMT Owner and Health Coach</span>
                 </div>
             </a>
+            <a href="/meet-the-team#eric" class="cs-item">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/eric.webp" | resize({ width: 924, height: 930, position: "top" }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/eric.webp" | resize({ width: 924, height: 930 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/eric.webp" | resize({ width: 924, height: 930 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/eric.webp" | resize({ width: 850, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/eric.webp" | resize({ width: 850, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/eric.webp" | resize({ width: 850, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/eric.webp" | resize({ width: 1100, height: 830 }) | jpeg %}" alt="Photo of Eric Darlington" width="656" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Eric Darlington</span>
+                    <span class="cs-job">Osteopath</span>
+                </div>
+            </a>
         </div>
     </div>
 </section>

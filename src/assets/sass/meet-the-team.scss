@@ -132,6 +132,27 @@
             left: 0;
         }
 
+        /* Temporary placeholder used when a practitioner's headshot has not
+           been supplied yet. Remove once the real <picture> is in place. */
+        .cs-placeholder {
+            background-color: #efece6;
+            border: calc(2 / 16 * 1em) dashed #c9c2b1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: calc(24 / 16 * 1em);
+            box-sizing: border-box;
+        }
+
+        .cs-placeholder-text {
+            font-size: calc(22 / 16 * 1em);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #8a8472;
+        }
+
         .cs-picture2 {
             width: calc(413 / 16 * 1em);
             height: calc(493 / 16 * 1em);
